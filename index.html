@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crie um currículo profissional gratuito com modelos personalizáveis.">
+  <title>Ponto Norte — Criador de Currículos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Ponto Norte, início">
+      <span class="brand-mark">T</span>
+      <span>ponto norte<span class="brand-dot">.</span></span>
+    </a>
+    <nav><a href="#como-funciona">Como funciona</a><a href="#criador">Criar currículo</a></nav>
+    <a class="top-cta" href="#criador">Começar agora <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-line"></span> SEU PRÓXIMO PASSO COMEÇA AQUI</span>
+        <h1>Uma boa oportunidade merece um <em>bom currículo.</em></h1>
+        <p>Organize sua ponto norte, escolha um visual que combine com você e prepare seu currículo para novas oportunidades — sem complicação e sem pagar nada.</p>
+        <a class="primary-btn" href="#criador">Criar meu currículo <span>→</span></a>
+        <div class="hero-note"><span class="note-check">✓</span> Gratuito · Fácil de editar · PDF para baixar</div>
+      </div>
+      <div class="hero-art" aria-label="Exemplo ilustrativo de currículo">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-top">✦ Seu talento em destaque</div>
+        <article class="sample-sheet">
+          <div class="sample-band"></div>
+          <div class="sample-content">
+            <div class="sample-avatar">MC</div>
+            <div class="sample-name">MARINA COSTA</div>
+            <div class="sample-role">ASSISTENTE ADMINISTRATIVA</div>
+            <div class="sample-rule"></div>
+            <div class="sample-heading">PERFIL PROFISSIONAL</div>
+            <div class="sample-line wide"></div><div class="sample-line"></div><div class="sample-line mid"></div>
+            <div class="sample-heading">EXPERIÊNCIA</div>
+            <div class="sample-line wide"></div><div class="sample-line mid"></div>
+            <div class="sample-heading">FORMAÇÃO</div>
+            <div class="sample-line wide"></div>
+          </div>
+        </article>
+        <div class="floating-tag tag-bottom"><span>✓</span> Pronto para compartilhar</div>
+        <div class="hero-spark spark-a">✳</div><div class="hero-spark spark-b">✦</div>
+      </div>
+    </section>
+
+    <section class="how" id="como-funciona">
+      <div class="section-heading">
+        <span class="eyebrow">SIMPLES ASSIM</span>
+        <h2>Seu currículo em <em>três etapas.</em></h2>
+      </div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><div class="step-icon">✎</div><h3>Conte sua história</h3><p>Preencha seus dados, experiências, estudos e habilidades.</p></article>
+        <article class="step"><span class="step-number">02</span><div class="step-icon">▤</div><h3>Escolha seu estilo</h3><p>Compare seis modelos e encontre o que combina com seu objetivo.</p></article>
+        <article class="step"><span class="step-number">03</span><div class="step-icon">↓</div><h3>Baixe em PDF</h3><p>Confira a prévia e gere seu documento para enviar quando quiser.</p></article>
+      </div>
+    </section>
+
+    <section class="builder" id="criador">
+      <div class="builder-heading">
+        <div><span class="eyebrow">FERRAMENTA GRATUITA</span><h2>Monte seu currículo</h2><p>As alterações aparecem na prévia enquanto você preenche.</p></div>
+        <span class="free-pill">●  100% gratuito</span>
+      </div>
+
+      <div class="builder-grid">
+        <section class="editor-panel">
+          <div class="panel-title"><span class="panel-number">1</span><div><h3>Suas informações</h3><p>Preencha os campos que fazem sentido para sua ponto norte.</p></div></div>
+          <form id="resumeForm">
+            <div class="form-section">
+              <h4>Dados pessoais</h4>
+              <label>Nome completo<input id="name" placeholder="Ex.: Marina Costa"></label>
+              <div class="field-row">
+                <label>Área ou cargo desejado<input id="role" placeholder="Ex.: Auxiliar administrativo"></label>
+                <label>Cidade e estado<input id="city" placeholder="Ex.: Dianópolis - TO"></label>
+              </div>
+              <div class="field-row">
+                <label>E-mail<input id="email" type="email" placeholder="voce@email.com"></label>
+                <label>Telefone<input id="phone" placeholder="(00) 00000-0000"></label>
+              </div>
+              <label>LinkedIn ou portfólio <span class="optional">opcional</span><input id="linkedin" placeholder="linkedin.com/in/seunome"></label>
+            </div>
+            <div class="form-section">
+              <h4>Objetivo e perfil</h4>
+              <label>Objetivo profissional<textarea id="objective" rows="2" placeholder="Que oportunidade você está buscando?"></textarea></label>
+              <label>Resumo profissional<textarea id="summary" rows="3" placeholder="Apresente brevemente sua experiência, pontos fortes e interesses."></textarea></label>
+            </div>
+            <div class="form-section">
+              <h4>Formação e experiência</h4>
+              <label>Formação acadêmica<textarea id="education" rows="2" placeholder="Curso, instituição e período."></textarea></label>
+              <label>Experiência profissional<textarea id="experience" rows="3" placeholder="Cargo, empresa, período e principais atividades. Se ainda não trabalhou, deixe em branco."></textarea></label>
+              <label>Cursos e certificações<textarea id="courses" rows="2" placeholder="Nome do curso, instituição e ano."></textarea></label>
+            </div>
+            <div class="form-section">
+              <h4>Competências e informações extras</h4>
+              <label>Habilidades<textarea id="skills" rows="2" placeholder="Ex.: comunicação, organização, pacote Office."></textarea></label>
+              <div class="field-row">
+                <label>Idiomas<input id="languages" placeholder="Ex.: Português (nativo), Inglês básico"></label>
+                <label>Projetos e atividades<input id="projects" placeholder="Ex.: voluntariado, projetos escolares"></label>
+              </div>
+              <label>Informações adicionais <span class="optional">opcional</span><textarea id="additional" rows="2" placeholder="Disponibilidade, carteira de habilitação ou outras informações relevantes."></textarea></label>
+            </div>
+          </form>
+          <div class="privacy-note">🔒 Seus dados ficam nesta página durante o preenchimento. Não são enviados para um servidor.</div>
+        </section>
+
+        <section class="preview-column">
+          <div class="panel-title preview-title"><span class="panel-number">2</span><div><h3>Modelo e prévia</h3><p>Troque o modelo quando quiser.</p></div></div>
+          <div class="template-picker" role="group" aria-label="Escolha o modelo">
+            <button class="template-btn active" data-template="classic">01 <span>Clássico</span></button>
+            <button class="template-btn" data-template="modern">02 <span>Moderno</span></button>
+            <button class="template-btn" data-template="executive">03 <span>Executivo</span></button>
+            <button class="template-btn" data-template="minimal">04 <span>Minimalista</span></button>
+            <button class="template-btn" data-template="creative">05 <span>Criativo</span></button>
+            <button class="template-btn" data-template="starter">06 <span>Primeiro emprego</span></button>
+          </div>
+          <div class="paper-wrap">
+            <article id="resumePreview" class="resume-paper theme-classic">
+              <header class="resume-header">
+                <div class="preview-avatar" id="pInitials">SE</div>
+                <div><h2 id="pName">Seu nome completo</h2><p id="pRole">Área ou cargo desejado</p><div class="contact-line" id="pContact">E-mail · Telefone · Cidade</div></div>
+              </header>
+              <div class="resume-body">
+                <section class="preview-section" id="secObjective"><h3>Objetivo profissional</h3><p id="pObjective">Seu objetivo profissional aparecerá aqui.</p></section>
+                <section class="preview-section" id="secSummary"><h3>Perfil profissional</h3><p id="pSummary">Seu resumo aparecerá aqui.</p></section>
+                <section class="preview-section" id="secEducation"><h3>Formação acadêmica</h3><p id="pEducation">Sua formação aparecerá aqui.</p></section>
+                <section class="preview-section" id="secExperience"><h3>Experiência profissional</h3><p id="pExperience">Suas experiências aparecerão aqui.</p></section>
+                <section class="preview-section" id="secCourses"><h3>Cursos e certificações</h3><p id="pCourses">Seus cursos aparecerão aqui.</p></section>
+                <section class="preview-section" id="secSkills"><h3>Habilidades</h3><p id="pSkills">Suas habilidades aparecerão aqui.</p></section>
+                <section class="preview-section" id="secExtras"><h3>Informações complementares</h3><p id="pExtras">Idiomas, projetos e informações adicionais.</p></section>
+              </div>
+              <footer class="resume-footer">CURRÍCULO PROFISSIONAL</footer>
+            </article>
+          </div>
+          <button class="download-btn" id="downloadBtn">⇩ &nbsp; Baixar currículo em PDF</button>
+          <p class="download-hint">Dica: revise telefone e e-mail antes de baixar.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">T</span><span>ponto norte<span class="brand-dot">.</span></span></a><span>Seu percurso, com clareza e personalidade.</span><span>© 2026 Ponto Norte</span></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
